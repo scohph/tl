@@ -1,0 +1,36 @@
+{
+  "name": "trloop",
+  "version": "1.0.0",
+  "description": "Ready-to-use solid project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-merkle-root": "ts-node scripts/generate-merkle-root.ts",
+    "generate-merkle-root:trloop": "ts-node scripts/merkle/generate-merkle-root.ts --input scripts/merkle/balances.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scohph/trloop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scohph/trloop/issues"
+  },
+  "homepage": "https://github.com/scohph/trloop#readme",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@types/node": "^22.7.4",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.12"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^16.0.3",
+    "hardhat-deploy": "^0.11.37",
+    "viem": "^2.9.18"
+  }
+}
