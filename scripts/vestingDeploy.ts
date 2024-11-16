@@ -7,7 +7,7 @@ async function main() {
   const TrloopTokenAddress = "";
   const ownerAddress = "";
 
-  const Vesting = await ethers.getContractFactory("VestingMerkle");
+  const Vesting = await ethers.getContractFactory("Vesting");
   const vesting = await Vesting.deploy(
     vestingContractName,
     TrloopMerkleRoot,
